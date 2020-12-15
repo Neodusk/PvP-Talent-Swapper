@@ -1,3 +1,4 @@
+require 'busted.runner'()
 
 --[[
   Test constructor and deconstructor
