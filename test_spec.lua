@@ -1,3 +1,3 @@
 describe("Test example", function ()
-  assert.is_true(_G.myglobal)
+  assert.is_true(true)
 end)
