@@ -2,7 +2,7 @@
 <Frame name="PvPTalentSwapper"> 
     <Scripts> 
         <OnLoad> 
-            PvPTalentSwapper_OnLoad();
+            PvPTalentSwapper_onLoad();
         </OnLoad>
     </Scripts>
 </Frame>
