@@ -24,13 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      - uses: xpol/setup-lua@v0.2
-        with:
-          lua-version: "5.1.5"
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-
-      - uses: leafo/gh-actions-luarocks@v2
+      - uses: leafo/gh-actions-lua@v8.0.0
+      - uses: leafo/gh-actions-luarocks@v4.0.0
 
       # installs luarocks package manager and busted unit test
       - name: Install busted and compile
