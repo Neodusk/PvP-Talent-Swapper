@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - uses: xpol/setup-lua@v1
+      - uses: xpol/setup-lua@v0.2
         with:
           lua-version: "5.1.5"
 
