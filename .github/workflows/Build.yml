@@ -40,5 +40,5 @@ jobs:
         
       - name: Run Tests
         run: |
-          busted PVPTalentSwapper.lua
+          busted .
           
