@@ -39,5 +39,5 @@ jobs:
         
       - name: Run Tests
         run: |
-          busted -o -c -v utfTerminal
+          busted -o -v utfTerminal
           
