@@ -1,0 +1,8 @@
+<Script file="PvPTalentSwapper.lua"/> 
+<Frame name="PvPTalentSwapper"> 
+    <Scripts> 
+        <OnLoad> 
+            PvPTalentSwapper_OnLoad();
+        </OnLoad>
+    </Scripts>
+</Frame>
