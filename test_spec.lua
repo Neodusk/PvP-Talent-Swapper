@@ -1,5 +1,3 @@
-require 'busted.runner'()
-
 --[[
   Test constructor and deconstructor
   Setup and Teardown for tests
@@ -22,6 +20,9 @@ end)
 
 describe("getEnemyClasses", function()
   pending("work in progress")
+  it("Sanity Check", function()
+    assert.is_true(true)
+  end)
 end)
 
 describe("getEnemyCount", function()
