@@ -44,5 +44,5 @@ jobs:
         
       - name: Run Tests
         run: |
-          busted test_spec.lua
+          busted --verbose test_spec.lua
           
