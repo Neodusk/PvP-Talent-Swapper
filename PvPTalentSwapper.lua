@@ -49,14 +49,14 @@ end
 Compares the number of players in each team
 If the enemy team count is less than player's, return false
 Else if the enemy team count is greater than player's, return true
-@return {Boolean} 
+@return {Boolean}
 --]]
 function PvPTalentSwapper:compareTeamCounts()
 
 end
 
 --[[
-  Sets the talents to specified talents if other team has more 
+  Sets the talents to specified talents if other team has more
   members at the start of a game
 --]]
 function PvPTalentSwapper:setTalentOverride()
@@ -88,7 +88,7 @@ end
 --[[
 Sets custom talent set for player
 The player can set talent sets for specific classes and specialization combinations
-Allows the player to set custom sets which are chosen if there are more enemies on opposing team 
+Allows the player to set custom sets which are chosen if there are more enemies on opposing team
 than on player's team
 Advanced talents defaultly override base talent sets
 --]]
@@ -97,7 +97,7 @@ function PvPTalentSwapper:setAdvancedTalentSet()
 end
 
 --[[
-Re-orders the talent set override rule 
+Re-orders the talent set override rule
 --]]
 function PvPTalentSwapper:setTalentSetOrder()
 
