@@ -17,8 +17,7 @@
     ConfirmTalentWipe()
     C_Commentator.GetWargameInfo(listID) : name, minPlayers, maxPlayers, isArena
     C_Commentator.GetMaxNumPlayersPerTeam(
-    Specializations talents...
---]]
+    Specializations talents...--]]
 PvPTalentSwapper = { };
 --[[
 Retrieves the enemy classes and specialization
@@ -49,29 +48,25 @@ end
 Compares the number of players in each team
 If the enemy team count is less than player's, return false
 Else if the enemy team count is greater than player's, return true
-@return {Boolean}
---]]
+@return {Boolean}--]]
 function PvPTalentSwapper:compareTeamCounts()
 
 end
 
 --[[
-  Sets the talents to specified talents if other team has more
-  members at the start of a game
---]]
+Sets the talents to specified talents if other team has more
+members at the start of a game--]]
 function PvPTalentSwapper:setTalentOverride()
 
 end
 
 --[[
-Retrieves all custom talent sets for player
---]]
+Retrieves all custom talent sets for player--]]
 function PvPTalentSwapper:getTalentSets()
 
 end
 --[[
-Retrieves current custom talent set for player
---]]
+Retrieves current custom talent set for player--]]
 function PvPTalentSwapper:getCurrentTalentSet()
 
 end
@@ -79,8 +74,7 @@ end
 --[[
 Sets custom talent set for player
 The player can define melee, caster, tank, heals for talent sets
-Example: 1 healer and 2 melee -> Set 1
---]]
+Example: 1 healer and 2 melee -> Set 1--]]
 function PvPTalentSwapper:setBasicTalentSet()
 
 end
@@ -90,15 +84,13 @@ Sets custom talent set for player
 The player can set talent sets for specific classes and specialization combinations
 Allows the player to set custom sets which are chosen if there are more enemies on opposing team
 than on player's team
-Advanced talents defaultly override base talent sets
---]]
+Advanced talents defaultly override base talent sets--]]
 function PvPTalentSwapper:setAdvancedTalentSet()
 
 end
 
 --[[
-Re-orders the talent set override rule
---]]
+Re-orders the talent set override rule--]]
 function PvPTalentSwapper:setTalentSetOrder()
 
 end
