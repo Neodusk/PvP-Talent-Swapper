@@ -32,6 +32,8 @@ jobs:
         run: |
           luarocks install luasocket
           luarocks install --local luasec
+          git submodule init
+          git submodule update
           luarocks make
           luarocks install busted
           luarocks install luacov
