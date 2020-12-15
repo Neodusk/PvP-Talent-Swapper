@@ -30,6 +30,7 @@ jobs:
       # installs luarocks package manager and busted unit test
       - name: Install busted and compile
         run: |
+          luarocks install luasocket
           luarocks install --local luasec
           luarocks make
           luarocks install busted
