@@ -36,6 +36,7 @@ jobs:
           luarocks make
           luarocks install busted
           luarocks install luacov
+          ls
         
       - name: Run Tests
         run: |
