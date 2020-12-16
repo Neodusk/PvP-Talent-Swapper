@@ -1,0 +1,8 @@
+## Interface: 90000
+## Title : PvP Talent Swapper
+## Notes: 
+## Author: Neodusk
+## Version: 0.8
+## SavedVariablesPerCharacter: PTS_BASIC_TALENT_SETS, PTS_ADVANCED_TALENT_SETS
+PVPTalentSwapper.xml
+PVPTalentSwapper.lua

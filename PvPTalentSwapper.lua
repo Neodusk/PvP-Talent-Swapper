@@ -38,6 +38,12 @@ function PvPTalentSwapper:onLoad(_)
   print("PvPTalentSwapper Invoked!")
 end
 --[[
+Main driver for PvPTalentSwapper, to be called from .xml 
+--]]
+function PvPTalentSwapper:onLoad(_)
+
+end
+--[[
 Retrieves the enemy classes and specialization
 @return {Array} enemies
 --]]
