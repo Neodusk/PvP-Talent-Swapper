@@ -18,30 +18,23 @@
     C_Commentator.GetWargameInfo(listID) : name, minPlayers, maxPlayers, isArena
     C_Commentator.GetMaxNumPlayersPerTeam(
     Specializations talents...--]]
-print("PvPTalentSwapper Invoked!")
 
 PvPTalentSwapper = { };
-
---[[ EVENT LISTENERS --]]
-local ChangeSpecFrame = CreateFrame("Frame")
-local ArenaRosterFrame = CreateFrame("Frame")
-local ArenaOpponentRosterFrame = CreateFrame("Frame")
-
-ChangeSpecFrame:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED")
-ArenaRosterFrame:RegisterEvent("ARENA_TEAM_ROSTER_UPDATE")
-ArenaOpponentRosterFrame:RegisterEvent("ARENA_OPPONENT_UPDATE")
 
 --[[
 Main driver for PvPTalentSwapper, to be called from .xml 
 --]]
 function PvPTalentSwapper:onLoad(_)
+  --Print load to chat
   print("PvPTalentSwapper Invoked!")
-end
---[[
-Main driver for PvPTalentSwapper, to be called from .xml
---]]
-function PvPTalentSwapper:onLoad(_)
-
+  --Get version
+  -- local open = io.open
+  -- read Config file
+  -- local file = open("../../../WTF/Config.wtf", "r")
+  -- if not file then return nil end
+  -- local fileContent = file:read("*a")
+  -- for substr in fileContent:gmatch("SET lastAddonVersion" do)
+  -- file:close()
 end
 --[[
 Retrieves the enemy classes and specialization
@@ -92,7 +85,8 @@ end
 --[[
 Retrieves current custom talent set for player--]]
 function PvPTalentSwapper:getCurrentTalentSet(_)
-
+  local currentSpec = GetSpecialization();
+  print("CurrentSpec", currentSpec)
 end
 
 --[[
@@ -121,4 +115,15 @@ end
 
 
 
+PvPTalentSwapper:onLoad();
+PvPTalentSwapper:getCurrentTalentSet();
 
+
+--[[ EVENT LISTENERS --]]
+local ChangeSpecFrame = CreateFrame("Frame")
+local ArenaRosterFrame = CreateFrame("Frame")
+local ArenaOpponentRosterFrame = CreateFrame("Frame")
+
+ChangeSpecFrame:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED")
+ArenaRosterFrame:RegisterEvent("ARENA_TEAM_ROSTER_UPDATE")
+ArenaOpponentRosterFrame:RegisterEvent("ARENA_OPPONENT_UPDATE")
