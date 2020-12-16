@@ -38,7 +38,7 @@ function PvPTalentSwapper:onLoad(_)
   print("PvPTalentSwapper Invoked!")
 end
 --[[
-Main driver for PvPTalentSwapper, to be called from .xml 
+Main driver for PvPTalentSwapper, to be called from .xml
 --]]
 function PvPTalentSwapper:onLoad(_)
 

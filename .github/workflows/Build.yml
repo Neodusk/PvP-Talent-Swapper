@@ -40,7 +40,7 @@ jobs:
       - name: Run Linter
         run: |
           luarocks install luacheck
-          luacheck PvPTalentSwapper.lua --globals PvPTalentSwapper --ignore 212/self
+          luacheck PvPTalentSwapper.lua --allow-defined --ignore 212/self
         
       - name: Run Tests
         run: |
