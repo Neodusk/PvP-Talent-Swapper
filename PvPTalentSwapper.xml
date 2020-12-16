@@ -1,8 +1,9 @@
 <Script file="PvPTalentSwapper.lua"/> 
-<Frame name="PvPTalentSwapper"> 
+<Frame name="PvPTalentSwapper">
     <Scripts> 
-        <OnLoad> 
-            PvPTalentSwapper_onLoad();
+        <OnLoad>
+            PvPTalentSwapper:onLoad()
+            this:RegisterEvent("VARIABLES_LOADED")
         </OnLoad>
     </Scripts>
 </Frame>

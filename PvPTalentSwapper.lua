@@ -20,6 +20,12 @@
     Specializations talents...--]]
 PvPTalentSwapper = { };
 --[[
+Main driver for PvPTalentSwapper, to be called from .xml 
+--]]
+function PvPTalentSwapper:onLoad(_)
+
+end
+--[[
 Retrieves the enemy classes and specialization
 @return {Array} enemies
 --]]
