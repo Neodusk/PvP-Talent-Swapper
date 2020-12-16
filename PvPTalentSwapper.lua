@@ -20,7 +20,7 @@
     Specializations talents...--]]
 PvPTalentSwapper = { };
 --[[
-Main driver for PvPTalentSwapper, to be called from .xml 
+Main driver for PvPTalentSwapper, to be called from .xml
 --]]
 function PvPTalentSwapper:onLoad(_)
 
